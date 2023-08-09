@@ -7,10 +7,6 @@ public class Monkey implements Mooing {
     private final String name = "Mongo";
     private String soundMonkey;
 
-    public String getName() {
-        return name;
-    }
-
     public String getSoundMonkey() {
         return sound();
     }

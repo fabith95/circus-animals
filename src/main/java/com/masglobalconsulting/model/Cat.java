@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 @Getter
 public class Cat implements Mooing {
     private final String name = "Micka";
-    private String soundCat;
-
     public String getSoundCat() {
         return sound();
     }
