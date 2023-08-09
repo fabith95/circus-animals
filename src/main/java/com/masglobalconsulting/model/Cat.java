@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 public class Cat {
-    private String name = "Micka";
+    private final String name = "Micka";
     private String soundCat;
 
     public String getSoundCat() {

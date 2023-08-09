@@ -1,15 +1,13 @@
 package com.masglobalconsulting.model;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@Getter
 public class Dog {
-    private String name = "Bob";
+    private final String name = "Bob";
     private String soundDog;
-
-    public String getName() {
-        return name;
-    }
 
     public String getSoundDog() {
         return soundDog();

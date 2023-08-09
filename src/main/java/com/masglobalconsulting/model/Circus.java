@@ -17,7 +17,7 @@ public class Circus {
         Bird bird = new Bird();
         Dog dog = new Dog();
 
-        System.out.println("Choose which mooing you want?? <Cat>, <Monkey>, <Bird>, <Dog>");
+        System.out.println("Choose which mooing you want? <Cat>, <Monkey>, <Bird>, <Dog>");
         String result = scanner.nextLine();
 
         ArrayList animals = new ArrayList();
@@ -44,7 +44,6 @@ public class Circus {
                 animals.add(cat.getSoundCat());
                 animals.add(bird.getSoundBird());
                 animals.add(monkey.getSoundMonkey());
-
                 int d = (int) (Math.random() * 3);
                 return (String) animals.get(d);
             default:

@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 public class Bird {
-    private String name = "Kim";
+    private final String name = "Kim";
     private String soundBird;
 
     public String getSoundBird() {

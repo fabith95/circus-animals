@@ -4,7 +4,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class Monkey {
-    private String name = "Mongo";
+    private final String name = "Mongo";
     private String soundMonkey;
 
     public String getName() {
