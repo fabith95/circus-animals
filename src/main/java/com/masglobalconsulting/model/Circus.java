@@ -8,7 +8,8 @@ public class Circus {
 
     public static void main(String[] args) {
         Circus circus = new Circus();
-        System.out.println(circus.show());
+        String answer = circus.show();
+        System.out.println("The Mooing animals is: " + answer + " 😂");
     }
 
     public String show() {
