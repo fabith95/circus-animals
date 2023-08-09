@@ -5,15 +5,15 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Getter
-public class Bird {
+public class Bird implements Mooing {
     private final String name = "Kim";
     private String soundBird;
 
     public String getSoundBird() {
-        return soundBird();
+        return sound();
     }
 
-    public String soundBird(){
+    public String sound() {
         String sound = "";
         if (name == "Kim") {
             sound = "Fifi";

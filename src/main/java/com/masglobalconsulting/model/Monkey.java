@@ -3,7 +3,7 @@ package com.masglobalconsulting.model;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-public class Monkey {
+public class Monkey implements Mooing {
     private final String name = "Mongo";
     private String soundMonkey;
 
@@ -12,10 +12,10 @@ public class Monkey {
     }
 
     public String getSoundMonkey() {
-        return soundMonkey();
+        return sound();
     }
 
-    public String soundMonkey(){
+    public String sound() {
         String sound = "";
         if (name == "Mongo") {
             sound = "Huhuha";

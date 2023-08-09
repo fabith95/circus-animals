@@ -5,17 +5,16 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Getter
-public class Dog {
+public class Dog implements Mooing {
     private final String name = "Bob";
     private String soundDog;
 
     public String getSoundDog() {
-        return soundDog();
+        return sound();
     }
 
-    public String soundDog(){
+    public String sound() {
         String sound = "";
-
         if (name == "Bob") {
             sound = "Woof";
         }
